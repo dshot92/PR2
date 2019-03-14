@@ -9,10 +9,10 @@ public Rectangle(int x, int y){
 }
 
 public int getPerimeter(){
-    return (this.height + this.width)*2;
+    return (this.getHeight() + this.width)*2;
   }
 
   public int getArea(){
-    return (this.height * this.width);
+    return (this.getHeight() * this.width);
   }
 }

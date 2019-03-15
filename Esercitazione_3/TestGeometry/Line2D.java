@@ -13,12 +13,23 @@ public class Line2D{
 	}
 
 	public boolean isContiguousWith(Line2D line){
-		if( this.point[1].getX() == line.point[1].getX() && this.point[1].getY() == line.point[1].getY() || this.point[0].getX() == line.point[0].getX() && this.point[0].getY() == line.point[0].getY() ){
+		if( this.point[1].getX() == line.point[1].getX() && this.point[1].getY() == line.point[1].getY() ){
 			return true;
-		}else{
-			return false;
 		}
+
+		if( this.point[0].getX() == line.point[1].getX() && this.point[0].getY() == line.point[1].getY() ){
+			return true;
+		}
+
+		if( this.point[1].getX() == line.point[0].getX() && this.point[1].getY() == line.point[0].getY() ){
+			return true;
+		}
+
+		if( this.point[0].getX() == line.point[0].getX() && this.point[0].getY() == line.point[0].getY() ){
+			return true;
+		}
+
+		return false;
 	}
-
-
+}
 }

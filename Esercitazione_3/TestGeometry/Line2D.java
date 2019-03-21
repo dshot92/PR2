@@ -7,6 +7,15 @@ public class Line2D{
 		this.point[1] = point2;
 	}
 
+	public double getX(){
+		return this.x;
+	}
+
+	public double getY(){
+		return this.y;
+	}
+
+
 	public double getLength(){
 		return this.point[0].getDistanceTo(point[1]);
 

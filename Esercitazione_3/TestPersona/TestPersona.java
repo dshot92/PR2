@@ -42,6 +42,12 @@ public class TestPersona {
         // Test 4: Metodo incrementa stipendio
         sottopagato.incrementaStipendio(-10); // Non modifica lo stipendio.
 		assert sottopagato.getStipendio() == 110;
+
+
+		Persona p1 = new Persona("Mario", "Rossi", 21);
+		Persona p2 = new Persona("Mario", "Rossi", 21);
+
+		assert p1.equals(p2);
         
 		System.out.println("Ok!");
 

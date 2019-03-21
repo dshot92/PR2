@@ -26,14 +26,11 @@ public class ConvertiEuro {
 		String aux = "[";
 
 		for(int i = 0; i < this.count ; i++){
-			aux += "(";
-			aux += this.valute[i].getName();
-			aux += ", ";
-			aux += this.valute[i].getVal();
+			aux += "(" + this.valute[i].getName() + ", " +  this.valute[i].getVal();
 			if(i != 2)
-			aux += "), ";
+				aux += "), ";
 			else
-			aux += ")";
+				aux += ")";
 		}
 		return aux + "]";
 	}

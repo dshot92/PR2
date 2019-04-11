@@ -1,0 +1,10 @@
+
+Class:
+                          image
+multimediaElement >       video
+                          audio > title(not empty)
+
+Exectution: shows "...Esecuzione in corso..."
+
+
+multimedia Player implements I-audio, I-video, I-imaged

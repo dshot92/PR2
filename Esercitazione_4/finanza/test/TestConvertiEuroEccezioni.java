@@ -80,7 +80,7 @@ public class TestConvertiEuroEccezioni {
 
 
 		// Costruisci un nuovo convertitore che è diverso da mioConvertitore
-		ConvertiEuro convertitore3 = new ConvertiEuro(6);
+		ConvertiEuro convertitore3 = new ConvertiEuro(5);
 		convertitore3.impostaValuta(yen);
 		convertitore3.impostaValuta(usd);
 		convertitore3.impostaValuta(brl);

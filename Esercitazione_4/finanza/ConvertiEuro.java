@@ -77,11 +77,8 @@ public class ConvertiEuro {
 		for(int i = 0; i < this.valute.length  ; i++){
 			if(!this.valute[i].equals(other.valute[i])){
 				return false;
-			} else if(this.valute[i].getNumber() != other.valute[i].getNumber()){
-					return true;
-				}
+			}
 		}
-
 		return true;
 	}
 

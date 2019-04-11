@@ -1,0 +1,39 @@
+Si considerino le seguenti specifiche:
+
+Un elemento multimediale e' una immagine, un filmato o una registrazione audio identificato da un titolo (una stringa non vuota).
+Eseguire un elemento multimediale comporta la stampa della scritta "...Esecuzione in corso...".
+
+Una registrazione audio è un elemento multimediale riproducibile, ha associato:
+una durata (un valore intero);
+un formato (i formati audio supportati dal programma sono solo MP3, MIDI, WAV, AAC);
+un volume (un valore intero, massimo 10);
+i metodi weaker() e louder() per regolare il volume;
+un metodo play().
+Se riprodotta, ripete (per un numero di volte pari alla durata) la stampa del titolo concatenato a:
+una sequenza di punti esclamativi (di lunghezza pari al volume).
+E' richiesta una sola stampa di titolo e punti esclamativi per riga.
+
+Un filmato e' un elemento multimediale riproducibile, ha associato:
+una durata (un valore intero);
+un formato (i formati video supportati dal programma sono solo MP4, WEBM, AVI, FLV);
+un volume (un valore intero, massimo 10);
+i metodi weaker() e louder() per regolare il volume;
+una luminosita' (un valore intero, massimo 10);
+i metodi brighter() e darker() per regolare la luminosita';
+un metodo play().
+Se riprodotta, ripete (per un numero di volte pari alla durata) la stampa del titolo concatenato a:
+una sequenza di punti esclamativi (di lunghezza pari al volume);
+una sequenza di asterischi (di lunghezza pari alla luminosita').
+E' richiesta una sola stampa di titolo, punti esclamativi e asterischi per riga.
+
+Un'immagine non e' riproducibile, ha associato:
+un formato (i formati immagine supportati dal programma sono solo JPG, PNG, JPEG, TIFF);
+una luminosita' regolabile analoga a quella dei filmati;
+un metodo show().
+Il metodo show stampa il titolo concatenato a:
+una sequenza di asterischi di lunghezza pari alla luminosita'.
+
+Eseguire un oggetto multimediale significa invocarne il metodo show() se e' un'immagine o il metodo play() se e' riproducibile.
+
+Organizzare opportunamente il codice di un lettore multimediale che memorizza (tramite array)
+10 elementi e richiama i diversi metodi per regolare volume, luminosita' ed esegue gli elementi dati.

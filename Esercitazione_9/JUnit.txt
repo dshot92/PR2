@@ -1,0 +1,5 @@
+# Compilare il progetto
+javac -cp j4.jar:. -d . ./it/unica/pr2/stream/MyStream.java ./it/unica/pr2/stream/test/TestStream.java
+
+# Eseguire il test
+java -cp j4.jar:ham.jar:. org.junit.runner.JUnitCore it.unica.pr2.stream.test.TestStream
